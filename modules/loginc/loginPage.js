@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {signUp,signIn,logOut,deleteAccount,isSigned} from "./conectAuth";
 import { toggel } from "../../lib1/header/header";
-import styles from "./L.module.css"
+import styles from "./Login.module.css"
 
 export default function Login(props) {
   // console.log(props.profileClick,"login");
