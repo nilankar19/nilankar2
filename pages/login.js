@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "../component/header/header";
+import Header from "../components/header";
 import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
@@ -267,6 +267,7 @@ export default function Login(type) {
                     style={{
                       display: lodingIcon ? "block" : "none",
                     }}
+
                     className={styles.loding_gif}
                     alt="loding..."
                   />

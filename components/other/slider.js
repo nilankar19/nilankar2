@@ -1,13 +1,13 @@
 import { createElement, useEffect, useState } from "react";
 
 let images = [
-  "https://nilankar19.github.io/imgApi2/img3232/bg1.jpg",
-  "https://nilankar19.github.io/imgApi2/img3232/bg2.jpg",
-  "https://nilankar19.github.io/imgApi2/img3232/banner1.jpg",
+  "https://nilankar19.github.io/imgApi2/img3232/p1.png",
+  "https://nilankar19.github.io/imgApi2/img3232/p6.png",
+  "https://nilankar19.github.io/imgApi2/img3232/p4.png",
 ];
 
 function imageElm({ urls }) {
-  console.log("Urls imageelem", urls);
+  // console.log("Urls imageelem", urls);
 
   let zindex = ["-100", "-150", "-200","-250"];
   const slideClass = ["slide1","slide2","slide3"];
@@ -35,43 +35,26 @@ function imageElm({ urls }) {
     imageContainer.appendChild(newImg);
 
     let setintervalCount = 0;
-    let w = 100;
+    let w = 0;
     let t = 0;
     let state = 2;
-    setInterval(()=>{
-      if (setintervalCount==4) {
-        slideimgid.map((id,index)=>{ document.getElementById(id).style.width = "100%";})
-        w = 100
-        t = 0
-        state =2
-        setintervalCount = 0;
-        // clearTimeout()
-      }
-      ++setintervalCount
-      // console.log(setintervalCount,"set");
-      // console.log("state",state);
-      if(state == 0){
-         w = 100
-         t++
-        state = 2
-        }
-      // console.log("null,",state);
-      if (t == slideClass.length) {
-        t = 0
-        // w = 100
-      }
-       w = w - 50
-      let ws = w.toString()
-      // console.log("t",t);
-      let cl = slideimgid[t]
-      if (state > 0) {
+    let currentIndex = 0;
 
-        let i = document.getElementById(cl);
-          i.style.width = ws + "%"
-          --state
+setInterval(() => {
+  let ws = w.toString();
+  let cl = slideimgid[currentIndex];
+  let i = document.getElementById(cl);
+  i.style.width = ws + "%";
 
-      }
-    },4000)
+  currentIndex++;
+  if (currentIndex >= slideimgid.length) {
+    currentIndex = 0;
+    slideimgid.map((id,index)=>{
+      document.getElementById(id).style.width="100%";
+    });
+  }
+}, 4000);
+
   });
 
 }
@@ -98,7 +81,7 @@ export default function Slider(props) {
       set_Initial_Img(true);
 
       if (Object.keys(result)[0] == "images") {
-        console.log("workerfnc_Slider", result);
+        // console.log("workerfnc_Slider", result);
         imageElm({ urls: result.images });
       }
     });
@@ -106,7 +89,9 @@ export default function Slider(props) {
 
   return (
     <>
-      <div id="slide-container" className="slide-container ">
+    <div className="slider  bg-black overflow-hidden  ">
+      <div className=" bg-black  ">
+      <div id="slide-container" className="bg-black flex flex-row overflow-hidden justify-start  ">
         {/* <img
           src=""
           alt=""
@@ -114,6 +99,8 @@ export default function Slider(props) {
           id="bg-img1"
           style={{ display: "block" }}
         /> */}
+      </div>
+      </div>
       </div>
     </>
   );

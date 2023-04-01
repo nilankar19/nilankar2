@@ -1,11 +1,11 @@
-import Link from "../component/link";
+import Link from "../lib1/link";
 import { responseApi } from "../pages/api/profile";
 import { h } from "../pages/api/profile";
-import { getImageUrl } from "../component/getimageurl";
+import { getImageUrl } from "../lib1/getimageurl";
 import Image from "next/image";
 import { v4 as uuidV4 } from "uuid";
 import { useEffect, useState } from "react";
-import SocialMedia from "@/component/socialmedia";
+import SocialMedia from "@/components/socialmedia";
 // import Worker from 'worker-loader!../public/worker.js';
 
 // import h from "../pages/api/hello";

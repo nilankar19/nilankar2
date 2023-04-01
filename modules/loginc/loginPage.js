@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {signUp,signIn,logOut,deleteAccount,isSigned} from "./conectAuth";
-import { toggel } from "../../component/header/header";
+import { toggel } from "../../lib1/header/header";
 import styles from "./L.module.css"
 
 export default function Login(props) {

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import  {userProfile} from "../pages/api/profileApi";
-
+import s from '../public/assets/img/nilankar.jpg'
 
 
 
@@ -19,8 +19,8 @@ export default function UserProfile(props) {
             <div className={`section_1`}>
               <div className={`p_Div_userIcon`}>
                 <Image
-                  className={`profileImg`}
-                  src=""
+                  className={``}
+                  src={s}
                   id="Avatar"
                   width={32}
                   height={32}

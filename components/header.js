@@ -11,13 +11,13 @@ export default function Header(){
       <div className="flex flex-col h-16 p-2 w-full divide-slate-50 shadow-md">
         <div className="flex flex-row justify-between">
           <Nav>
-            <NavItem href="/">hoderme</NavItem>
-            <NavItem href="/">homere</NavItem>
-            <NavItem href="/">homere</NavItem>
-            <NavItem href="/">herome</NavItem>
+            <NavItem href="/">Home</NavItem>
+            <NavItem href="/blogs">Blogs</NavItem>
+            <NavItem href="/projects">Projects</NavItem>
+            <NavItem href="/linktree">Linktree</NavItem>
           </Nav>
 
-          <div>sdfsdf</div>
+          <div>API</div>
           <div>
             <img
               className={`userIcon rounded-2xl align-middle`}

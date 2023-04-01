@@ -1,11 +1,11 @@
-import Link from "../component/link";
+import Link from "../lib1/link";
 // import { projectlist } from "../pages/api/profileApi";
-import { getImageUrl } from "../component/getimageurl";
+import { getImageUrl } from "../lib1/getimageurl";
 import Image from "next/image";
 
 import { v4 as uuidV4 } from "uuid";
 import { Fragment, useEffect, useState } from "react";
-import ProjectsCards from "@/component/pagebprojects";
+import ProjectsCards from "@/lib1/pagebprojects";
 import Welcome from "@/component/welcome";
 
 

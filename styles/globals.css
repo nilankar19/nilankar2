@@ -3,6 +3,61 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+.dark-mode {
+  --bg-color: #333;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.vtext{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: small;
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+  padding: 0;
+  font-weight: 800;
+  margin-top: 100%;
+}
+.font{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.projectli{
+overflow-x: scroll;
+}
+.projectli::-webkit-scrollbar{
+  width: 20px;
+  height: 10px;
+  background-color: #43C6AC;
+
+}
+.projectli::-webkit-scrollbar-thumb{
+  background-color: #444;
+}
+.p-li{
+  background-color: #ffffff;
+
+
+}
+.p-li:hover{
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.welcome{
+  font-size: 6vw;
+}
+.welcome-sub{
+  font-size: 3vw;
+  color: #00ffcc;
+}
  /* :root{
   --header: rgba(33, 221, 158, 0);
   --main-bg-color:rgba(255, 255, 255, 0);
@@ -20,8 +75,17 @@
   --scrollbar-thumb-bg-color: rgba(235, 13, 9, 0);
 } */
 html,
-body {
 
+body:-webkit-full-screen{
+ background-color: #00ffcc;
+ scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+  background: #ffffff;
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #000000;
 }
 .userIcon{
   width: 42px;
@@ -30,10 +94,10 @@ body {
 
 }
 .banner{
-  background-image: url("../public/assets/img/gbanner.png");
+  background-image: url("../public/assets/img/ai.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 
 }
 .createAccount {
@@ -200,6 +264,35 @@ body {
   padding: 4%;
   text-align: left;
 }
+/* slider */
+.slider{
+  /* margin-left: -10%; */
+  /* width: 400px; */
+  width: 100%;
+  /* height: 30%; */
+  box-shadow: rgb(8, 208, 248) 0px 0px 0px 3px;
+
+}
+.slide{
+  position: relative;
+  height: 100%;
+ /* border-radius: 10px; */
+}
+.slide1{
+width: 100%;
+}
+.slide2{
+  width: 100%;
+}
+.slide3{
+  width: 100%;
+}
+.social{
+  background: #00ffcc;
+  color: #00ffcc;
+  width: 30%;
+  border-radius: 20px;
+}
 @media (max-width:720px) {
 
   .userSection{
@@ -227,4 +320,117 @@ body {
       padding: 2%;
   }
 
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #85888853;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.btn-download{
+  margin-right: 20px;
+}
+.btn-download-sec{
+  margin-left: 10px;
+
+}
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+ .aside{
+  top: 31%;
+  padding-left: 20px;
+ }
+ .mlayout{
+  margin-top: 124%;
+ }
+ .m-portfolio-intro{
+  margin-left: 0;
+ }
+ .download{
+  margin-left: 0;
+  font-size: 2vw;
+  margin-top: 0 !important;
+ }
+
+ .m-d-btn{
+  margin: 2%;
+  font-size: 2vw;
+ }
+ .projects{
+  margin-left: 0;
+  background-color: #fff;
+  padding-top: 30%;
+ }
+ .mproject-list{
+  padding: 5%;
+  margin: 4%;
+ }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* CSS rules for medium devices */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* CSS rules for large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* CSS rules for extra large devices */
 }
