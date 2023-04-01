@@ -45,7 +45,7 @@ export default function Home() {
         </Head>
 
         {/* <Slider /> */}
-        <Darkmode>
+
         <Header></Header>
         <AsideNav></AsideNav>
         <Main>
@@ -67,12 +67,12 @@ export default function Home() {
 
 
         </Main>
-        </Darkmode>
+       
         {/* <PageSectionA />*/}
 
         {/* <PageSectionB />  */}
 
-       
+
         {/* <homesection className={styles.main2}></homesection> */}
       </div>
     </>

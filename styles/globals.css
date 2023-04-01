@@ -298,16 +298,13 @@ width: 100%;
   .userSection{
       width: 100%;
       font-size: 2vw;
-      margin-left: 2%;
-      margin-right: 2%;
+      /* margin-left: 2%; */
+      /* margin-right: 2%; */
       height: 40%;
       right: 0;
       align-self: center;
   }
-  .section_1{
-      height: 20%;
-      justify-content: center;
-  }
+
   .section_2{
       justify-content: center;
       font-size: 3vw;
@@ -324,7 +321,8 @@ width: 100%;
 
 .glow-on-hover {
   width: 220px;
-  height: 50px;
+  height: 24px;
+
   border: none;
   outline: none;
   color: #fff;
@@ -382,6 +380,9 @@ width: 100%;
   margin-left: 10px;
 
 }
+.none{
+display: none;
+}
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
@@ -390,7 +391,7 @@ width: 100%;
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (max-width: 576px) {
  .aside{
-  top: 31%;
+  top: 12%;
   padding-left: 20px;
  }
  .mlayout{
@@ -402,9 +403,11 @@ width: 100%;
  .download{
   margin-left: 0;
   font-size: 2vw;
-  margin-top: 0 !important;
+  margin-top: 202px !important;
  }
-
+.downlad-btn-p{
+  padding: 1%;
+}
  .m-d-btn{
   margin: 2%;
   font-size: 2vw;
@@ -417,6 +420,22 @@ width: 100%;
  .mproject-list{
   padding: 5%;
   margin: 4%;
+ }
+ .section_1{
+/* margin-top: 20px; */
+padding: 10px;
+
+ }
+ .section_2{
+  margin-top: 50px;
+ }
+ .intro-div{
+  padding-bottom: 20%;
+  padding-top: 10%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+ }
+ .main{
+  padding: 0;
  }
 }
 

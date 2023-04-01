@@ -1,6 +1,6 @@
 export default function Skill(params) {
   return (
-    <div className="flex flex-row border w-32  relative">
+    <div className="flex flex-row border w-32 mt-8 relative">
         <div>
         <div className='text-center align-middle vtext'>SkILlS</div>
         </div>

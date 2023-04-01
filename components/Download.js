@@ -39,30 +39,30 @@ export default function DownloadSection({ children }) {
   return (
     <div className="download flex flex-col ml-60 mt-5">
       <div className="download-btn-sec flex flex-row justify-between p-1 pl-8 pr-8 bg-gray-100 rounded-lg">
-        <div className="flex flex-row w-2/3">
+        <div className="downlad-btn-p flex flex-row w-2/3 p-2">
           <button
-            class="glow-on-hover flex justify-center  mr-3   items-center"
+            className="glow-on-hover flex justify-center  mr-3   items-center"
             onClick={handleDownload}
           >
-            <span class="mr-2 ml-2">
+            <span className="mr-2 ml-2">
               {isDownloading ? "Downloading..." : "Download resume"}
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-4"
+              className="w-6 h-4"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
+              strokeWidth="2"
               strokeLinecap="round"
-              stroke-linejoin="round"
+              strokeLinejoin="round"
             >
               <path d="M5 10l7 7 7-7" />
             </svg>
           </button>
 
           <button
-            class=" glow-on-hover"
+            className=" glow-on-hover"
             onClick={() =>
               window.location.assign("https://www.github.com/nilankar19")
             }

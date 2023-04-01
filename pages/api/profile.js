@@ -6,9 +6,9 @@ export let responseApi = {
         objectId: "45asdfa5f5f4a2fd15s",
         name: "nilankar",
         displayName: "@nilankar_",
-        email: "goapple73@gmail.com",
+        email: "shiva19nil@gmail.com",
         imageId:
-          "https://www.flaticon.com/free-icon/happy_743267?term=emoji&page=1&position=31&origin=search&related_id=743267",
+          "",
         aboutHeading: "hi im human | cosmos lover",
         tag: ["secience&tech", "web", "ar/vr"],
         aboutPara: "240 words",

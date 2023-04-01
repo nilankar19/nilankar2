@@ -49,7 +49,6 @@ export function Card({plist}) {
     return (
       <li
         key={uuId}
-        data-id={uuId}
         className={"mproject-list flex flex-col border cursor-pointer rounded-md"}
         onClick={(e) => window.location.assign(cardLink)}
       >
