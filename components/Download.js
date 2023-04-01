@@ -20,7 +20,7 @@ export default function DownloadSection({ children }) {
             const url = URL.createObjectURL(blob);
             const link = document.createElement("a");
             link.href = url;
-            link.setAttribute("download", `Nilankar_${dateString}`);
+            link.setAttribute("download", `Nilankar_${dateString}.pdf`);
             document.body.appendChild(link);
             link.click();
             link.remove();
