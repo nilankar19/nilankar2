@@ -49,7 +49,7 @@ const signUp = async (signUpEmail,signUpPassword) => {
         //call backend api to save signUp userData here in mongodb
 
         console.log("hello-signup",u.user.uid,signUpEmail,signUpPassword);
-        localStorage.setItem("authentication",true);
+        // localStorage.setItem("authentication",true);
     })
 
     } catch (error) {
@@ -57,7 +57,7 @@ const signUp = async (signUpEmail,signUpPassword) => {
 
       console.log("signup",error.message);
       return signUp_message
-      localStorage.setItem("authentication",false)
+      // localStorage.setItem("authentication",false)
 
     }
 
@@ -69,7 +69,7 @@ const signIn = async (signInEmail,signInPassword) => {
       await signInWithEmailAndPassword(auth,signInEmail,signInPassword)
       .then((u)=>{
 
-        localStorage.setItem("authentication",true);
+        // localStorage.setItem("authentication",true);
         console.log("after signIn call",u.user);
         isSigned=true;
         return userJson.user.uid;
@@ -77,14 +77,14 @@ const signIn = async (signInEmail,signInPassword) => {
 
     } catch (error){
       isSigned = false;
-      localStorage.setItem("authentication",false)
+      // localStorage.setItem("authentication",false)
       console.log("signIn",error.message);
 }};
 
 const logOut = async () => {
     try {
       await signOut(auth).then(()=>{
-        localStorage.setItem("authentication",false)
+        // localStorage.setItem("authentication",false)
         isSigned=false;});
       console.log("logout called");
     } catch (error){
@@ -95,11 +95,11 @@ const logOut = async () => {
 const deleteAccount = async () => {
       try {
         await deleteUser(user).then(()=>{
-          localStorage.setItem("authentication",false)
+          // localStorage.setItem("authentication",false)
 
         })
       } catch (error){
-       localStorage.setItem("authentication",true)
+      //  localStorage.setItem("authentication",true)
         console.log(error.message);
 }};
 
