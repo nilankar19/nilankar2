@@ -42,7 +42,7 @@ export default function DownloadSection({ children }) {
         <div className="flex flex-row w-2/3">
           <button
             class="glow-on-hover flex justify-center  mr-3   items-center"
-            onClick={() => {handleDownload}}
+            onClick={handleDownload}
           >
             <span class="mr-2 ml-2">
               {isDownloading ? "Downloading..." : "Download resume"}
