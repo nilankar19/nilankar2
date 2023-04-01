@@ -4,7 +4,7 @@ export default function Nav({children}){
             <ul className="flex relative  space-x-reverse">
                 {children}
             </ul>
-            <div>asdf</div>
+           
         </nav>
     )
 }
