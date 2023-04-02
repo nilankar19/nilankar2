@@ -106,10 +106,10 @@ export let responseApi = {
             backend: "nodeJs | mongodb",
             middleware: "firebase | mongoose",
             date: "7-10-2022",
-            url: "https://authentication-sepia-sigma.vercel.app/",
+            url: "https://authentication-nilankar19.vercel.app/",
             description: [
               "It is a web application built using the Next.js framework, with user authentication functionality implemented using Node.js, MongoDB, and Firebase. Here is a diagram that summarizes the various components of your application and how they interact with each other:",
-              "https://www.flaticon.com/free-icon/happy_743267?term=emoji&page=1&position=31&origin=search&related_id=743267",
+              "https://authentication-nilankar19.vercel.app/",
             ],
             diploy: "www.github.com",
             imageId: "https://nilankar19.github.io/imgApi2/img3232/p7.png",

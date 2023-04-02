@@ -42,8 +42,8 @@ export default function Linktree() {
             https://blockchain-awesome-dot-p6.vercel.app/
           </a>
 
-          <a href="https://authentication-sepia-sigma.vercel.app/">
-            https://authentication-sepia-sigma.vercel.app/
+          <a href="https://authentication-nilankar19.vercel.app/">
+          https://authentication-nilankar19.vercel.app/
           </a>
         </div>
         {/* <div className="card-linktree card-linktree3 flex flex-col justify-between text-blue-400 m-10 p-10">
