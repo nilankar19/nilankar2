@@ -1,5 +1,6 @@
 import ImageVideo from "../imagevideo"
 import Slider from "../other/slider"
+import Twitter from "../other/twiiter"
 
 export default function AsideNav(){
 
@@ -8,15 +9,16 @@ export default function AsideNav(){
 
             <div className="flex flex-col justify-start border bg-white">
                 <div className="bg-black">
-                {/* <ImageVideo imgSrc='assets/img/nilankar.jpg' /> */}
+
                 <Slider />
+                <Twitter />
                 </div>
-            <ul className="flex flex-col h-60 mt-5 mb-40 p-2 text-start justify-around bg-slate-300 font-light">
+            {/* <ul className="flex flex-col h-60 mt-5 mb-40 p-2 text-start justify-around bg-slate-300 font-light">
                 <li className="flex flex-row">projects</li>
                 <li className="flex flex-row">projects</li>
                 <li className="flex flex-row">projects</li>
                 <li className="flex flex-row">projects</li>
-            </ul>
+            </ul> */}
 
 
             </div>

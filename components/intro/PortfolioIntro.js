@@ -9,7 +9,7 @@ export default function PortfolioIntro({ children }) {
       <div className="  banner flex flex-col  justify-center text-center   rounded-lg pt-14 pb-14  text-white">
         <div className="flex flex-row justify-center  w-full  relative intro-div">
           <h1 className="relative text-4xl ">Hi there,Im fullStack developer </h1>
-
+          
         </div>
         {children}
 
