@@ -17,7 +17,7 @@ export default function Header(){
             <NavItem href="/linktree">Linktree</NavItem>
           </Nav>
 
-          <div>API</div>
+          <div className="tag">PORTFOLIO</div>
           <div>
             <img
               className={`userIcon rounded-2xl align-middle`}

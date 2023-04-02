@@ -77,7 +77,11 @@ export default function ProjectCards({ projectslist }) {
     // console.log(list);
   return (
     <div className="mt-12">
+      <div className="bg-slate-800 p-2">
+       <span className="welcome-sub ml-4 text-start " >PROJECTs</span>
+
       <Card plist={list}/>
+      </div>
     </div>
   );
 }

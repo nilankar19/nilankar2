@@ -8,7 +8,7 @@ export default function AsideNav(){
 
             <div className="flex flex-col justify-start border bg-white">
                 <div className="bg-black">
-                <ImageVideo imgSrc='assets/img/nilankar.jpg' />
+                {/* <ImageVideo imgSrc='assets/img/nilankar.jpg' /> */}
                 <Slider />
                 </div>
             <ul className="flex flex-col h-60 mt-5 mb-40 p-2 text-start justify-around bg-slate-300 font-light">

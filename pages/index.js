@@ -20,7 +20,9 @@ import Slider from "@/components/other/slider";
 import Layout from "@/components/Layout";
 import Darkmode from "@/components/Darkmode";
 import SocialMedia from "@/components/socialmedia";
+import PortfolioShorts from "@/components/intro/Portfolioshorts";
 
+let intro_info = "Hello, my name is Nilankar. I am a socially conscious individual with experience working with NGOs on social campaigns. In addition to my passion for making a positive impact on society, I also have strong programming skills, including proficiency in programming languages such as C++, Python, and JS. I believe that technology and programming can be powerful tools in driving social change and improving people's lives."
 export default function Home() {
   const [profile, setprofile] = useState(false);
   const profileStatus = async () => {};
@@ -52,9 +54,12 @@ export default function Home() {
           <PortfolioIntro>
             <Skill />
           </PortfolioIntro>
+         <PortfolioShorts info={intro_info} />
+
           <DownloadSection></DownloadSection>
 
           <Projects>
+           
             <ProjectCards projectslist={responseApi.user[0].profile.projectlist} />
           </Projects>
 
@@ -67,7 +72,7 @@ export default function Home() {
 
 
         </Main>
-       
+
         {/* <PageSectionA />*/}
 
         {/* <PageSectionB />  */}
