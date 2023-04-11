@@ -99,13 +99,30 @@ export let responseApi = {
         ],
         projectlist: [
           {
+            id: 99,
+            projectId: 101,
+            projectName: "Trading HomePage UI",
+            frontend: "NextJs",
+            backend: "nodeJs | mongodb",
+            middleware: "Material UI | mongoose",
+            date: "11-4-2023",
+            url: "https://tapdata-nil.netlify.app/",
+            description: [
+              "It is a web application built using the Next.js framework, with user authentication functionality implemented using Node.js, MongoDB, and Firebase. Here is a diagram that summarizes the various components of your application and how they interact with each other:",
+              "https://authentication-nilankar19.vercel.app/",
+            ],
+            diploy: "www.github.com",
+            imageId: "https://nilankar19.github.io/imgApi2/img3232/p9.png",
+            qrcode: "2",
+          },
+          {
             id: 100,
             projectId: 101,
             projectName: "Authentication Api",
             frontend: "NextJs",
             backend: "nodeJs | mongodb",
             middleware: "firebase | mongoose",
-            date: "7-10-2022",
+            date: "7-1-2023",
             url: "https://authentication-nilankar19.vercel.app/",
             description: [
               "It is a web application built using the Next.js framework, with user authentication functionality implemented using Node.js, MongoDB, and Firebase. Here is a diagram that summarizes the various components of your application and how they interact with each other:",
