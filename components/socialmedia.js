@@ -32,7 +32,7 @@ const SocialMedia = () => {
           />
 
       </Link>
-      <Link href="https://www.linkedin.com/in/nilankar-03a574266" target="_blank" rel="noopener noreferrer">
+      <Link href="https://www.linkedin.com/in/nilankar-b1a072286/overlay/contact-info/" target="_blank" rel="noopener noreferrer">
 
       <Image
           src={linkdin}
