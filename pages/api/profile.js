@@ -6,7 +6,7 @@ export let responseApi = {
         objectId: "45asdfa5f5f4a2fd15s",
         name: "nilankar",
         displayName: "@nilankar_",
-        email: "shiva19nil@gmail.com",
+        email: "nilankar19@gmail.com",
         imageId:
           "",
         aboutHeading: "hi im human | cosmos lover",
