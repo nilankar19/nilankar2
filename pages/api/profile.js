@@ -116,7 +116,7 @@ export let responseApi = {
           "Continuous support is provided for three months, offering technical assistance, troubleshooting, and customization services round the clock to ensure the store's smooth operation and ongoing enhancement.",
           ],
           diploy: "wix",
-          imageId: "https://example.com/thesteelplus-screenshot.png",
+          imageId: "https://nilankar19.github.io/imgApi2/img3232/uniquedesign.png",
           qrcode: "1002",
           },
           {
@@ -139,7 +139,7 @@ export let responseApi = {
           "Continuous support is provided for three months, offering technical assistance, troubleshooting, and customization services round the clock to ensure the store's smooth operation and ongoing enhancement.",
           ],
           diploy: "shopify",
-          imageId: "https://example.com/awfullygoodco-screenshot.png",
+          imageId: "https://nilankar19.github.io/imgApi2/img3232/awfullygoodco.png",
           qrcode: "1001",
           },
           {
