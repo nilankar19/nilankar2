@@ -22,7 +22,7 @@ import Darkmode from "@/components/Darkmode";
 import SocialMedia from "@/components/socialmedia";
 import PortfolioShorts from "@/components/intro/Portfolioshorts";
 
-let intro_info = "Hello, my name is Nilankar. I am a socially conscious individual with experience working with NGOs on social campaigns. In addition to my passion for making a positive impact on society, I also have strong programming skills, including proficiency in programming languages such as C++, Python, and JS. I believe that technology and programming can be powerful tools in driving social change and improving people's lives."
+let intro_info = "Hi! I'm Nilankar, an Innovative Cloud Solutions Architect ☁️. My passion lies in crafting cutting-edge solutions within cloud environments, specializing in Google Cloud Platform (GCP), VPS setup, and optimizing eCommerce platforms like Shopify and Wix. I thrive on implementing efficient DevOps practices and fine-tuning infrastructure for maximum performance. My dedication? Utilizing cloud technologies to fuel business growth and streamline operations. Let's connect and explore the possibilities together! 🚀"
 export default function Home() {
   const [profile, setprofile] = useState(false);
   const profileStatus = async () => {};
