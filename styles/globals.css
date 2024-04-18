@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb{
 
 }
 .banner{
-  background-image: url("../public/assets/img/ai.png");
+  background-image: url("../public/assets/img/headerbanner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
