@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-import p from "../../public/assets/img/nilankar_latest.jpg"
+import p from "../../public/assets/img/nilankar_latest.png"
 const PortfolioShorts = ({ info, image }) => {
   return (
     <div className="mportfolio-shorts flex items-center justify-center ml-60 py-8 lg:py-16">
