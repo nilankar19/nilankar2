@@ -49,7 +49,7 @@ export function Card({plist}) {
     return (
       <li
         key={uuId}
-        className={"mproject-list flex flex-col border cursor-pointer rounded-md"}
+        className={"mproject-list flex flex-col border mr-4 cursor-pointer rounded-md"}
         onClick={(e) => window.location.assign(cardLink)}
       >
         <div className="flex p-li  flex-col border rounded-md bg-blue-300 w-60">
