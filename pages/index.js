@@ -56,7 +56,7 @@ export default function Home() {
           </PortfolioIntro>
          <PortfolioShorts info={intro_info} />
 
-          // <DownloadSection></DownloadSection>
+        
 
           <Projects>
            
