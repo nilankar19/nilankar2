@@ -11,7 +11,7 @@ export default function DownloadSection({ children }) {
 
       const handleDownload = () => {
         setIsDownloading(true);
-        fetch("#")
+        fetch("https://nilankar.vercel.app/#")
           .then((response) => response.blob())
           .then((blob) => {
             const now = Date.now();
