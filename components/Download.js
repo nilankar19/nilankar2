@@ -11,7 +11,7 @@ export default function DownloadSection({ children }) {
 
       const handleDownload = () => {
         setIsDownloading(true);
-        fetch("https://nilankar19.github.io/Nilankar_m.pdf")
+        fetch("#")
           .then((response) => response.blob())
           .then((blob) => {
             const now = Date.now();
