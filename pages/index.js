@@ -11,7 +11,7 @@ import AsideNav from "@/components/aside/aside";
 import Main from "@/components/main/main";
 import PortfolioIntro from "@/components/intro/PortfolioIntro";
 import Skill from "@/components/intro/Skill";
-import DownloadSection from "@/components/Download";
+// import DownloadSection from "@/components/Download";
 import Projects from "@/components/projects/Projects";
 import ProjectCards from "@/components/projects/ProjectsCard";
 import { responseApi } from "./api/profile";
